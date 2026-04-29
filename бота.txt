@@ -1,0 +1,15 @@
+import telebot
+
+bot = telebot.TeleBot("токен бота")
+@bot.message_handler(commands=['start'])
+def send_welcome(message):
+    bot.reply_to(message, 'привет это бот который помогает чуть чуть начать сортировать мусор вот про что я могу рассказать: vred_okruzausei_srede, garbage')
+
+bot.message_handler(commands=['vred_okruzausei_srede'])
+def send_welcome(message):
+    bot.reply_to(message, 'Загрязнение окружающей среды опасно для здоровья человека, животных, растений и состояния экосистем. Вредные вещества, которые попадают в атмосферу, воду или почву, могут вызывать негативные последствия')
+
+bot.message_handler(commands=['garbage'])
+def send_welcome(message):
+    bot.reply_to(message, 'Мусор лучше сортировать по мусоркам если их нет то по пакетам 1 - органика 2 - пластик 3 - стекло 4 -опасные 5 - бумага а когда наполнили пакеты сдайте их в какой нибуть пункт сдачи чего либо и мусор вредит всему только 1 пакет может долго разлогаться и многие другие вещи ')
+bot.polling()
