@@ -1,0 +1,34 @@
+body {
+    font-family: Georgia,  sans-serif; /* Семейство шрифтов */
+    font-size: 30px; /* Размер основного шрифта в <p></p>  */
+    background-color: #5988FF; /* Цвет фона веб-страницы */
+    color: #1100ff; /* Цвет основного текста */ 
+}
+h1 {
+    animation: color-change 3s infinite;
+    color: #FD98FB; /* Цвет заголовка */
+    font-size: 24px; /* Размер шрифта в пунктах */
+    font-family: Georgia, serif; /* Семейство шрифтов */
+}
+@keyframes color-change {
+    0%   { color: blue; }
+    25%   { color: green; }
+    50%  { color: red; }
+    75%  {color: purple}
+    100% { color: blue; }
+}
+ol {
+    background-color: #FD98FB;
+}
+
+h1 {
+    background-color: #D6FF6B;
+}
+
+head {
+    background-color: #D6FF6B;
+}
+
+p {
+    background-color: #ffffff;
+}
